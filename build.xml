@@ -11,7 +11,7 @@
          description=""/> -->
          
  <target name="build"
-         depends="prepare,lint,phploc-ci,pdepend,phpcs-ci,phpcpd-ci,phpdox"
+         depends="prepare,lint,phploc-ci,pdepend,phpcs-ci,phpcpd-ci"
          description=""/>
 
  <!-- <target name="build-parallel"
@@ -174,10 +174,10 @@
   </exec>
  </target> -->
 
- <target name="phpdox"
+ <!-- <target name="phpdox"
          depends="phploc-ci,phpcs-ci,phpmd-ci"
          description="Generate project documentation using phpDox">
   <exec executable="${toolsdir}phpdox" dir="${basedir}/build"/>
- </target>
+ </target> -->
 </project>
 

@@ -115,7 +115,7 @@
    <arg path="${basedir}/src" />
    <arg value="xml" />
    <arg path="${basedir}/build/phpmd.xml" />
-   <arg value="--reportfile" />
+   <arg value="- -reportfile" />
    <arg path="${basedir}/build/logs/pmd.xml" />
   </exec>
  </target> -->
@@ -165,7 +165,7 @@
          depends="prepare"
          description="Run unit tests with PHPUnit">
   <exec executable="${toolsdir}phpunit" failonerror="true">
-   <arg value="--configuration"/>
+   <arg value="- -configuration"/>
    <arg path="${basedir}/build/phpunit.xml"/>
   </exec>
  </target> -->
